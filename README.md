@@ -1,13 +1,13 @@
-                  1.Libraries Imported:
+                  LIBRARIES IMPORTED
 
-matplotlib.pyplot:
+    matplotlib.pyplot:
 For plotting graphs and visualizations.
 
-pandas:
+    pandas:
 For data manipulation and handling time-series stock data.
 
-yfinance: 
+    yfinance: 
 For fetching historical stock market data from Yahoo Finance.
 
-scikit-learn (Random Forest and metrics):
+    scikit-learn (Random Forest and metrics):
 For building a machine learning model and evaluating its performance.
