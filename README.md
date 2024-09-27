@@ -1,4 +1,17 @@
-The Jupyter Notebook focuses on predicting stock prices using a machine learning model (Random Forest). Here's a breakdown of the methods and key steps used:
+
+The Jupyter Notebook focuses on predicting stock prices using a machine learning model (Random Forest).
+This is done on S&P500 using a library called 'YFinance' for getting the historical data of the stock index.
+
+ Stock Data :  
+          The data displayed includes columns with stock prices (`Open`, `High`, `Low`, `Close`), trading volume, and additional features such as `Target` and `Predictions`.
+          This data is likely used to train and test a machine learning model for predicting stock market trends.
+
+  Prediction Model :   
+          A column named `Predictions` seems to hold model outputs, while `Target` holds actual values.
+          The purpose of the model is likely to predict whether the stock will increase or decrease in value on a given day.
+          The stock prices are indexed by `Date`, implying that this data is likely time-series based.
+          
+Here's a breakdown of the methods and key steps used:
 
 1.  Libraries Imported :
    - `matplotlib.pyplot`: For plotting graphs and visualizations.
@@ -17,7 +30,7 @@ The Jupyter Notebook focuses on predicting stock prices using a machine learning
    - A target column is created:`sp500["Target"] = (sp500["Tomorrow"] > sp500["Close"]).astype(int)`,where the target is 1 if the price increases the next day,otherwise 0.
 
 4. Model Setup :
-   - Random Forest Classifier**: A machine learning model that builds multiple decision trees and merges them for better predictions. 
+   - Random Forest Classifier: A machine learning model that builds multiple decision trees and merges them for better predictions. 
    - `model = RandomForestClassifier(n_estimators=100, min_samples_split=100, random_state=1)`: Trains the model with 100 trees and a minimum of 100 samples per split.
 
 5. Model Training and Testing :
